@@ -1,10 +1,10 @@
 /* Module dependencies
  * ================================== */
 var express = require('express'),
-  routes = require('./routes'),
+	routes = require('./routes'),
   api = require('./routes/api'),
   consolidate = require('consolidate'),
-  swig = require('swig');
+  swig = require('swig'),
   http = require('http'),
   path = require('path');
 
@@ -35,7 +35,6 @@ if (app.get('env') === 'development') {
 if (app.get('env') === 'production') {
   // TODO
 }; 
-
 
 /* Routes
  * ================================== */

@@ -1,6 +1,6 @@
 <img src="http://zizzamia.com/img/bombolonejs_logo.png"/>
 
-### Bombolone.js version 0.0.3 ###
+### Bombolone.js version 0.0.4 ###
 
 Bombolone.js is a tasty Node App based on Express, Mongodb, AngularJS, jQuery, Sass and Bootstrap.
 It's designed to be a simple, flexible toolset for projects of any size. 
@@ -14,7 +14,7 @@ It's designed to be a simple, flexible toolset for projects of any size.
 sudo mongod
 
 # Clone the git repo in your new web app folder
-git https://github.com/Opentaste/bombolone.js.git new_app
+git https://github.com/Opentaste/bombolone.js.git node_app
 
 # Go to new_app and Install all the dependencies
 npm install
