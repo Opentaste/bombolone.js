@@ -14,4 +14,9 @@ footer {
   	opacity: 0.6;
     filter: alpha(opacity = 60); 
 	} 
+	a {
+		&.active {
+			text-decoration: underline;
+		}
+	}
 }

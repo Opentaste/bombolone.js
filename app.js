@@ -1,7 +1,7 @@
 /* Module dependencies
  * ================================== */
 var express = require('express'),
-	routes = require('./routes'),
+	routes = require('./routes/main'),
   api = require('./routes/api'),
   consolidate = require('consolidate'),
   swig = require('swig'),
@@ -28,17 +28,18 @@ app.use(app.router);
 
 // development only
 if (app.get('env') === 'development') {
-   app.use(express.errorHandler());
+  app.use(express.errorHandler());
 };
 
 // production only
 if (app.get('env') === 'production') {
-  // TODO
+  // TO DO
 }; 
 
 /* Routes
  * ================================== */
-app.get('/', routes.index);
+app.get('/', routes.home);
+app.get('/admin', routes.admin);
 
 
 /* Routes Api
@@ -48,11 +49,11 @@ app.get('/api/content', api.content);
 
 /* Routes Others
  * ================================== */
-app.get('*', routes.index);
+app.get('*', routes.home);
 
 
 /* Start Server
  * ================================== */
 http.createServer(app).listen(app.get('port'), function () {
-  console.log('Express server listening on port ' + app.get('port'));
+  console.log('Bombolone server listening on port ' + app.get('port'));
 });

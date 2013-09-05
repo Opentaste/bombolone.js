@@ -1,6 +1,6 @@
 <img src="http://zizzamia.com/img/bombolonejs_logo.png"/>
 
-### Bombolone.js version 0.0.4 ###
+### Bombolone.js version 0.0.5 ###
 
 Bombolone.js is a tasty Node App based on Express, Mongodb, AngularJS, jQuery, Sass and Bootstrap.
 It's designed to be a simple, flexible toolset for projects of any size. 
@@ -18,12 +18,13 @@ git https://github.com/Opentaste/bombolone.js.git node_app
 
 # Go to new_app and Install all the dependencies
 npm install
+sudo npm install -g nodemon
 
 # In two new tabs with the same path run Compass
 compass watch
 
-# Run Bombolone 
-node app.js
+# Run Bombolone in development
+nodemon app.js
 ```
 
 

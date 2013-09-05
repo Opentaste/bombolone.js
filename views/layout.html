@@ -6,7 +6,7 @@
   <!-- Always force latest IE rendering engine or request Chrome Frame -->
   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
-  <title>Bombolone.js</title>
+  <title>Bombolone.js {% block title %}{% endblock %}</title>
   <meta name="description" content="">
 
   <link rel="stylesheet" href="/css/style.css">
@@ -19,10 +19,14 @@
   </header>
 
   <div class="content row">
-    Content
+    {% block content %}{% endblock %}
   </div>
 
   <footer>
+    <p>
+      <a href="/" class="{% block home_selected %}{% endblock %}">Home</a> - 
+      <a href="/admin" class="{% block admin_selected %}{% endblock %}">Admin</a>
+    </p>
     <p>
       Copyright 2013 
       <a href="https://github.com/Opentaste/bombolone.js">Bombolone.js</a> All rights reserved.

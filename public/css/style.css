@@ -1,4 +1,4 @@
-/*!
+/*
  * Bootstrap v2.3.2
  *
  * Copyright 2012 Twitter, Inc
@@ -5882,4 +5882,7 @@ footer {
 footer p {
   opacity: 0.6;
   filter: alpha(opacity=60);
+}
+footer a.active {
+  text-decoration: underline;
 }
