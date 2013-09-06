@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html ng-app="nodeApp">
 <head>
   <meta charset="utf-8">
 
@@ -18,20 +18,23 @@
     <img src="/img/bombolonejs_logo.png" alt="" />
   </header>
 
-  <div class="content row">
+  <div class="content row" ng-controller="{% block ng_controller %}{% endblock %}">
     {% block content %}{% endblock %}
   </div>
 
   <footer>
     <p>
-      <a href="/" class="{% block home_selected %}{% endblock %}">Home</a> - 
-      <a href="/admin" class="{% block admin_selected %}{% endblock %}">Admin</a>
-    </p>
-    <p>
       Copyright 2013 
       <a href="https://github.com/Opentaste/bombolone.js">Bombolone.js</a> All rights reserved.
     </p>
+    <p>
+      <a href="/" class="{% block home_selected %}{% endblock %}">Home</a> - 
+      <a href="/admin" class="{% block admin_selected %}{% endblock %}">Admin</a>
+    </p>
   </footer>
 
+  <script src="/js/lib/angular.min.js"></script>
+  <script src="/js/app.js"></script>
+  <script src="/js/controllers/admin.js"></script>
 </body>
 </html>

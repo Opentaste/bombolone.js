@@ -2,8 +2,25 @@
 
 {% block title %}Admin{% endblock %}
 
+{% block ng_controller %}AdminCtrl{% endblock %}
+
 {% block content %}
-<p>admin</p>
+
+<form class="form-horizontal">
+  <legend>Admin</legend>
+  <p ng-bind="text"></p>
+  <div class="control-group">
+    <label for="inputFirstParagraph">Paragraph one</label>
+    <textarea id="inputFirstParagraph" class="input-xxlarge" placeholder="Enter text ..."></textarea>
+  </div>
+  <div class="control-group">
+    <label for="inputSecondParagraph">Paragraph two</label>
+    <textarea id="inputSecondParagraph" class="input-xxlarge" placeholder="Enter text ..."></textarea>
+  </div>
+  <div class="control-group">
+    <button type="submit" class="btn btn-primary">Update</button>
+  </div>
+</form>
 {% endblock %}
 
 {% block admin_selected %}active{% endblock %}
